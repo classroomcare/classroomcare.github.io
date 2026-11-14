@@ -570,3 +570,30 @@ a.team-location-card:hover {
     grid-template-columns: 1fr;
   }
 }
+/* ===== UCLA Christmas 2025 gallery ===== */
+
+.ucla-christmas-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.ucla-christmas-gallery .gallery-item {
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.ucla-christmas-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .ucla-christmas-gallery {
+    grid-template-columns: 1fr;
+  }
+}
